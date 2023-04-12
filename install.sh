@@ -11,7 +11,11 @@ elif [ $PLATFORM -eq 2 ]; then
     echo "Done."
 elif [ $PLATFORM -eq 3 ]; then
     echo "Installing for Windows..."
-    echo "Not yet implemented."
+    if command -v choco &> /dev/null; then
+        choco install openconnect oath-toolkit
+    else
+        echo "Chocolatey package manager is not installed on this system."
+    fi
 else
     echo "Invalid platform."
 fi
