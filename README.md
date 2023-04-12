@@ -65,7 +65,7 @@ All commands may require the computer password.
 
 The command `wwu-vpn-check` produces no output if the VPN is not active and returns the ID of the process if the VPN is active.
 
-### For zsh
+#### For zsh
 
 Change File `~/.zshrc`:
 
@@ -75,7 +75,7 @@ alias wwu-vpn-disconnect="sudo killall openconnect"
 alias wwu-vpn-check="sudo pgrep openconnect"
 ```
 
-### For fish
+#### For fish
 
 Change file `~/.config/fish/config.fish`
 
